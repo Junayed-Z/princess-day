@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8edf8">
+  <meta name="description" content="A little fairytale made with love, just for Zaima.">
+  <title>For Zaima, My Princess ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-glow" aria-hidden="true"></div>
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <section class="invitation" id="invitation">
+    <div class="invitation-stars">✧　✦　✧</div>
+    <p class="eyebrow">A royal invitation</p>
+    <div class="envelope-wrap">
+      <div class="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-letter"><span>For Zaima</span><b>♡</b></div>
+        <div class="envelope-front"></div>
+      </div>
+      <div class="envelope-seal">Z</div>
+    </div>
+    <h1>A little surprise<br><em>for my Princess</em></h1>
+    <p class="invite-copy">A tiny fairytale, made with a whole lot of love.<br>Ready to step into your little magical world?</p>
+    <button class="primary-button" id="enterButton">Open your invitation <span>♡</span></button>
+    <p class="invite-foot">With love, from Shawon</p>
+  </section>
+
+  <div id="site" class="site hidden">
+    <header class="topbar">
+      <a class="brand" href="#home">♡ A fairytale for Zaima</a>
+      <button class="music-toggle" id="musicToggle" type="button">
+        <span id="musicIcon">♫</span><span id="musicLabel">Play our song</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">A day as special as you</p>
+          <h2>Happy Princess<br><em>Day, Zaima</em></h2>
+          <p class="hero-subtitle">For the girl who makes ordinary moments feel a little more magical. Today, this little world is all yours.</p>
+          <button class="primary-button" id="readLetter">A letter for you <span>♡</span></button>
+          <div class="scroll-note">Your fairytale begins here <span>↓</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="halo"></div><div class="sparkle sp1">✦</div><div class="sparkle sp2">✧</div><div class="sparkle sp3">✦</div>
+          <div class="photo-frame">
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <div class="crown">♕</div><div class="photo-heart">♡</div>
+              <p>Your princess's portrait</p>
+              <small>Her original photo is included in this website inside the assets folder.</small>
+            </div>
+            <img id="princessPhoto" src="assets/zaima.png" alt="Zaima" onload="document.getElementById('photoPlaceholder').style.display='none'" onerror="this.style.display='none'">
+          </div>
+          <div class="photo-caption">the prettiest part of my little world</div>
+        </div>
+      </section>
+
+      <section class="letter-section" id="letter">
+        <div class="section-heading"><span>✿</span><p>A note from my heart</p><h2>To my <em>dearest Zaima</em></h2></div>
+        <article class="letter-card">
+          <div class="letter-top">♡ &nbsp; A little letter, just for you</div>
+          <p class="salutation">My dearest Zaima,</p>
+          <div class="letter-text">
+            Happy Princess Day, my favourite girl. ♡
+
+            If I could give you one gift today, it would be the chance to see yourself through my eyes. Maybe then you'd understand how special you are, how your smile can brighten an ordinary day, and how simply being you is more than enough.
+
+            I hope life always gives you reasons to smile. I hope your dreams find their way to you, your heart stays gentle, and you never forget how worthy you are of every beautiful thing.
+
+            You don't need a castle, a glass slipper, or a crown to be a princess. The kindness in your heart and the magic you bring into little moments are already enough.
+
+            So here's a little corner of the internet, filled with flowers, soft music, and all the affection I could fit into a page — made just for you.
+
+            Keep shining, my Princess. Today and every day. ♡
+          </div>
+          <div class="letter-sign">With all my love,<br><span>Shawon ♡</span></div>
+          <div class="letter-seal">S</div>
+        </article>
+      </section>
+
+      <section class="garden-section">
+        <div class="section-heading"><span>✿</span><p>A garden for you</p><h2>Flowers for my <em>favourite girl</em></h2></div>
+        <div class="bouquet" aria-label="A virtual bouquet">
+          <div class="flower fl1">🌸</div><div class="flower fl2">🌷</div><div class="flower fl3">🌹</div>
+          <div class="flower fl4">🌼</div><div class="flower fl5">🌸</div><div class="flower fl6">🌷</div>
+          <div class="stems"></div><div class="bouquet-wrap"></div><div class="bouquet-bow">♡</div>
+        </div>
+        <p class="garden-note">A little bouquet for you, Zaima. If I could, I'd bring you real flowers every time you deserved them — which is pretty much always.</p>
+        <button class="soft-button" id="moreFlowers">Send more flowers ✿</button>
+      </section>
+
+      <section class="final-section">
+        <div class="final-stars">✧　✦　✧</div>
+        <p class="eyebrow">One last thing, Princess</p>
+        <h2>Happy Princess Day,<br><em>my Zaima.</em></h2>
+        <p>May your days be soft, your dreams be big, and your smile never run out of reasons.</p>
+        <div class="heart-line">♡</div>
+        <button class="surprise-button" id="surpriseButton">Open your final surprise ✨</button>
+        <p class="hidden-surprise" id="hiddenSurprise">No matter how many flowers bloom or stars shine, this little world will always have one favourite princess. You. ♡</p>
+        <div class="signature">— Shawon</div>
+      </section>
+    </main>
+    <footer>Made with love, just for Zaima <span>♡</span></footer>
+  </div>
+
+  <audio id="backgroundMusic" src="assets/music.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
